@@ -15,7 +15,7 @@ class CardTimerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const borderRadius = BorderRadius.all(
-      Radius.circular(AdaptativeTheme.normalRounded),
+      Radius.circular(AdaptativeTheme.defaultRounded),
     );
     return InkWell(
       onTap: onTap,
@@ -30,8 +30,8 @@ class CardTimerWidget extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(
                 horizontal: AdaptativeTheme.defaultSpace,
-                vertical: AdaptativeTheme.largeSpacePlus),
-            height: 114,
+                vertical: AdaptativeTheme.largeSpace),
+            height: 105,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

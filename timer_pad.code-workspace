@@ -10,10 +10,10 @@
 			"path": "timer_pad_design_system"
 		},
 		{
-			"path": "timer_pad_home_module"
+			"path": "timer_pad_app"
 		},
 		{
-			"path": "timer_pad_app"
+			"path": "timer_pad_task_module"
 		}
 	],
 	"settings": {}

@@ -11,9 +11,18 @@ final themeLight = ThemeData(
         color: Colors.black,
       ),
       headline2: TextStyle(
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: FontWeight.w500,
         color: Colors.black,
+      ),
+      headline4: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
+        color: Color(0xFF070417),
+      ),
+      subtitle1: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
       ),
     ),
   ),

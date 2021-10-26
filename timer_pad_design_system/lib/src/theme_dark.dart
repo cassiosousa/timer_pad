@@ -14,6 +14,15 @@ final themeDark = ThemeData(
         fontWeight: FontWeight.w500,
         color: Colors.white,
       ),
+      headline4: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
+        color: Colors.white,
+      ),
+      subtitle1: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+      ),
     ),
   ),
   cardTheme: const CardTheme(

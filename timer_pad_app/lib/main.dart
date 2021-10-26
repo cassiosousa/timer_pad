@@ -14,6 +14,7 @@ class TimerPad extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Timer Pad',
+      debugShowCheckedModeBanner: false,
       theme: themeLight,
       darkTheme: themeDark,
       home: Container(),

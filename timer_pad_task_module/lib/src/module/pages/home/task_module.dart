@@ -1,9 +1,9 @@
 import 'package:timer_pad_core_module/timer_pad_core_module.dart';
 import 'package:timer_pad_dependencies_module/dependencies_module.dart';
-import 'package:timer_pad_home_module/src/module/bloc/timer_bloc.dart';
-import 'package:timer_pad_home_module/src/module/home_page.dart';
+import 'package:timer_pad_task_module/src/module/bloc/timer_bloc.dart';
+import 'package:timer_pad_task_module/src/module/pages/home/task_page.dart';
 
-class HomeModule extends Module {
+class TaskModule extends Module {
   @override
   List<Bind> get binds => [
         Bind.singleton((i) => Ticker()),

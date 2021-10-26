@@ -2,35 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:timer_pad_core_module/model/timer_model.dart';
 import 'package:timer_pad_dependencies_module/dependencies_module.dart';
 import 'package:timer_pad_design_system/pad_design_system.dart';
-import 'package:timer_pad_home_module/src/module/bloc/timer_bloc.dart';
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        bottom: false,
-        child: Container(
-          margin: const EdgeInsets.fromLTRB(
-            AdaptativeTheme.defaultSpace,
-            AdaptativeTheme.extraSpace,
-            AdaptativeTheme.defaultSpace,
-            AdaptativeTheme.noneSpace,
-          ),
-          child: Center(
-            child: Column(
-              children: [
-                TaskWidget(),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+import 'package:timer_pad_task_module/src/module/bloc/timer_bloc.dart';
 
 class TaskWidget extends StatelessWidget {
   static const taskText = "Task";
@@ -41,13 +13,13 @@ class TaskWidget extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
+          children: const [
             TitleWidget(text: taskText),
-            const ButtonMenuWidget(),
+            ButtonMenuWidget(),
           ],
         ),
         Padding(
-          padding: const EdgeInsets.only(top: AdaptativeTheme.largeSpace),
+          padding: const EdgeInsets.only(top: AdaptativeTheme.defaultSpace),
           child: BlocBuilder<TimerBloc, TimerState>(
             bloc: Modular.get<TimerBloc>(),
             builder: (context, state) {
