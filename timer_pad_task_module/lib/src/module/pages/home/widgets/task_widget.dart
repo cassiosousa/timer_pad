@@ -9,6 +9,7 @@ class TaskWidget extends StatelessWidget {
   const TaskWidget({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final timerBloc = Modular.get<TimerBloc>();
     return Column(
       children: [
         Row(
@@ -21,12 +22,11 @@ class TaskWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: AdaptativeTheme.defaultSpace),
           child: BlocBuilder<TimerBloc, TimerState>(
-            bloc: Modular.get<TimerBloc>(),
+            bloc: timerBloc,
             builder: (context, state) {
               final duration = state.timerEntity.duration ?? 0;
               return CardTimerWidget(
                 onTap: () {
-                  final timerBloc = Modular.get<TimerBloc>();
                   if (state is TimerInit) {
                     timerBloc.add(
                         TimerStarted(timerEntity: TimerEntity(duration: 0)));
@@ -34,8 +34,7 @@ class TaskWidget extends StatelessWidget {
                     timerBloc.add(const TimerResumed());
                   }
                 },
-                onLongPress: () =>
-                    Modular.get<TimerBloc>().add(const TimerPause()),
+                onLongPress: () => timerBloc.add(const TimerPause()),
                 text:
                     "${hourFormat(duration)}:${minutesFormat(duration)}:${secondsFormat(duration)}",
               );
