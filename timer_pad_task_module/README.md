@@ -11,12 +11,19 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Sample App that uses Flutter Modular and BLoC.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Register your time and separate them by categories.
+
+## Modules
+
+- App `timer_pad_app `
+- App `timer_pad_core_module `
+- Dependencies for all modules `timer_pad_dependencies_module `
+- Design system for app `timer_pad_design_system `
+- Task module to register the time `timer_pad_task_module`
 
 ## Getting started
 
@@ -25,15 +32,18 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+How to run.
 
-```dart
-const like = 'sample';
+- Enter to:
+
+```sh
+cd timer_pad_app
 ```
 
+- Execute 
+
+```sh
+flutter run lib/main.dart
+```
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.

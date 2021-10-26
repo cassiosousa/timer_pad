@@ -1,9 +1,11 @@
-class TimerEntity {
+import 'package:timer_pad_dependencies_module/dependencies_module.dart';
+
+class TimerEntity extends Equatable {
   final int? _duration;
 
   int? get duration => _duration;
 
-  TimerEntity({int? duration = 0}) : _duration = duration;
+  const TimerEntity({int? duration = 0}) : _duration = duration;
 
   TimerEntity copyWith({required int duration}) {
     return TimerEntity(duration: duration);
@@ -14,4 +16,7 @@ class TimerEntity {
 
   @override
   String toString() => 'TimerEntity { duration: "$_duration" }';
+
+  @override
+  List<Object?> get props => [duration];
 }

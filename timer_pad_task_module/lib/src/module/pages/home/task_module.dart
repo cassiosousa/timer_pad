@@ -8,6 +8,7 @@ class TaskModule extends Module {
   List<Bind> get binds => [
         Bind.singleton((i) => Ticker()),
         Bind.singleton((i) => TimerBloc(ticker: i())),
+        Bind.factory((i) => TimerFormat())
       ];
 
   @override
