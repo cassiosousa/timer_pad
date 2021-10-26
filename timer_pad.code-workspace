@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "timer_pad_core_module"
+		},
+		{
+			"path": "timer_pad_dependencies_module"
+		},
+		{
+			"path": "timer_pad_design_system"
+		},
+		{
+			"path": "timer_pad_home_module"
+		},
+		{
+			"path": "timer_pad_app"
+		}
+	],
+	"settings": {}
+}
