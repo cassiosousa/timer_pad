@@ -7,7 +7,7 @@ class TodayListItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RoundedContainerWidget(
-      color: Colors.white,
+      color: Theme.of(context).cardTheme.color!,
       radius: AdaptativeTheme.defaultRounded,
       child: ListTile(
         shape: const RoundedRectangleBorder(

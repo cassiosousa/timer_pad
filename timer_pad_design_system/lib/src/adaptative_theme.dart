@@ -8,6 +8,7 @@ class AdaptativeTheme {
   static const extraSpace = 32.0;
   static const titleSize = 24.0;
   static const extraRounded = 20.0;
+  static const largeRounded = 30.0;
   static const defaultRounded = 12.0;
   static const minRounded = 6.0;
 }

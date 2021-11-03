@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:timer_pad/pages/activities_page.dart';
+
+import 'package:timer_pad/pages/productivity_page.dart';
 import 'package:timer_pad_design_system/pad_design_system.dart';
 import 'package:timer_pad/app_module.dart';
 
@@ -17,7 +20,7 @@ class TimerPad extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: themeLight,
       darkTheme: themeDark,
-      home: Container(),
+      initialRoute: "/activities",
     ).modular();
   }
 }

@@ -11,26 +11,21 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        bottom: false,
-        child: Container(
-          margin: const EdgeInsets.fromLTRB(
-            AdaptativeTheme.defaultSpace,
-            AdaptativeTheme.extraSpace,
-            AdaptativeTheme.defaultSpace,
-            AdaptativeTheme.noneSpace,
+    return Container(
+      padding: const EdgeInsets.fromLTRB(
+        AdaptativeTheme.defaultSpace,
+        60,
+        AdaptativeTheme.defaultSpace,
+        AdaptativeTheme.noneSpace,
+      ),
+      child: Column(
+        children: const [
+          Padding(
+            padding: EdgeInsets.only(bottom: AdaptativeTheme.defaultSpace),
+            child: TaskWidget(),
           ),
-          child: Column(
-            children: const [
-              Padding(
-                padding: EdgeInsets.only(bottom: AdaptativeTheme.defaultSpace),
-                child: TaskWidget(),
-              ),
-              Expanded(child: TodayWidget()),
-            ],
-          ),
-        ),
+          Expanded(child: TodayWidget()),
+        ],
       ),
     );
   }

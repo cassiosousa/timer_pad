@@ -25,6 +25,8 @@ final themeDark = ThemeData(
       ),
     ),
   ),
+  floatingActionButtonTheme:
+      const FloatingActionButtonThemeData(backgroundColor: Colors.white),
   cardTheme: const CardTheme(
     color: Color(0xFF292639),
   ),

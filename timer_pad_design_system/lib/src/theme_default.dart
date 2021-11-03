@@ -26,6 +26,8 @@ final themeLight = ThemeData(
       ),
     ),
   ),
+  floatingActionButtonTheme:
+      const FloatingActionButtonThemeData(backgroundColor: Colors.black),
   cardTheme: const CardTheme(
     color: Colors.white,
   ),
