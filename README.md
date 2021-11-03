@@ -1,4 +1,8 @@
 
+![image](https://user-images.githubusercontent.com/5117106/140197617-7efea7b1-3de9-4ac8-be5f-4de9fefef9c7.png)
+
+
+
 Sample App that uses Flutter Modular and BLoC.
 
 ## Features
